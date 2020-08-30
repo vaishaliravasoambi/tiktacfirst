@@ -1,0 +1,109 @@
+* {
+  font-family: sans-serif;
+}
+
+h3 {
+  color: white;
+}
+.turn {
+  color: white;
+  font-size: 40px;
+}
+body {
+  background: black;
+  justify-content: center;
+}
+.vbutton {
+  border-bottom: 2px solid #fff;
+  box-shadow: 0 4px 5px rgba(252, 250, 250, 0.16);
+  border-radius: 5px;
+  background-color: grey;
+  text-align: left;
+}
+h1 {
+  justify-content: center;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#game-container {
+  margin: 10px 10px;
+}
+.cell {
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+  font-weight: bold;
+  height: 80px;
+  width: 80px;
+  border: 4px solid #9cffa6;
+  border-radius: 5px;
+}
+.hide {
+  justify-content: center;
+  display: none;
+}
+.class1 {
+  display: table-cell;
+  animation: animate 1s linear infinite;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+}
+.restart {
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+}
+@import url("https://fonts.googleapis.com/css?family=Bad+script");
+.div01 {
+  padding-right: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  justify-content: center;
+
+  font-family: "Bad Script", cursive;
+  overflow: hidden;
+}
+h1 {
+  text-align: center;
+  justify-content: center;
+  margin: 0;
+  padding-bottom: 5%;
+  padding-left: 50%;
+  padding-top: 10%;
+  color: transparent;
+  font-size: 80px;
+}
+h1 span {
+  display: table-cell;
+  animation: animate 1s linear infinite;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    color: #fff;
+    filter: blur(2px);
+    text-shadow: 0 0 10px #00b3ff, 0 0 10px #00b3ff, 0 0 20px #00b3ff,
+      0 0 40px #00b3ff, 0 0 80px #00b3ff, 0 0 120px #00b3ff, 0 0 200px #00b3ff,
+      0 0 300px #00b3ff, 0 0 400px #00b3ff;
+  }
+}
+@media (max-width: 768px) {
+  .tiktak {
+    margin-top: 20%;
+    flex-wrap: wrap;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  a {
+    margin-bottom: 5%;
+    width: 100%;
+  }
+}

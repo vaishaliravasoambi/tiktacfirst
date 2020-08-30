@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>TIC TAC TOE</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="tiktak">
+      <center>
+        <div class="div01">
+          <h1>
+            <span>T</span>
+            <span>I</span>
+            <span>C-</span>
+
+            <span>T</span>
+            <span>A</span>
+            <span>C-</span>
+            <span>T</span>
+            <span>O</span>
+            <span>E</span>
+          </h1>
+        </div>
+
+        <h3>Player 1 name :</h3>
+        <input
+          type="text"
+          id="p1"
+          placeholder="Enter player1's name"
+          name="p1"
+        />
+        <br />
+        <br />
+        <h3>Player 2 name :</h3>
+        <input
+          type="text"
+          id="p2"
+          placeholder="Enter player2's name"
+          name="p2"
+        />
+
+        <br />
+        <br />
+        <label for="dimension"><h3>Choose a dimension:</h3></label>
+
+        <select name="dimensions" id="dimensions">
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+        </select>
+        <!-- <button type="button" >Normal</button> -->
+        <button
+          id="game-start"
+          class="btn btn-primary vbutton"
+          onclick="startGame()"
+        >
+          Start Game
+        </button>
+
+        <div id="game-container" class="hide class1 class2">
+          <div id="turn" class="turn"></div>
+        </div>
+        <div class="restart hide" id="restart" onclick="restartGame()">
+          Restart Game
+        </div>
+      </center>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
